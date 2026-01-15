@@ -13,6 +13,7 @@ add_executable(talker src/publisher_lambda_function.cpp)
 ament_target_dependencies(talker rclcpp std_msgs)
 install(TARGETS
   talker
+  listener
   DESTINATION lib/${PROJECT_NAME})
 # uncomment the following section in order to fill in
 # further dependencies manually.
